@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobitech.speachtotext">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpeachtoText"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".textToSpeech.activities.AssignmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".textToSpeech.activities.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".textToSpeech.activities.SpeechListActivity"
+            android:exported="true" />
+        <activity android:name=".textToSpeech.activities.InterviewRecord" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity
+            android:name=".textToSpeech.activities.InterviewCategory"
+            android:label="@string/app_name" />
+        <activity android:name=".textToSpeech.TimedMode.Timer_Countdown" />
+        <activity android:name=".textToSpeech.activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".textToSpeech.Walkthroughs.OnBoarding" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity android:name=".textToSpeech.activities.letscreateprofile" />
+        <activity android:name=".textToSpeech.activities.TextToSpeechActivity" />
+        <activity android:name=".textToSpeech.improvement_exercise.exercise_flipcard" />
+        <!--
+        <activity
+            android:name=".textToSpeech.NavBar.NavDrawerActivity"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".textToSpeech.NavBar.NavDrawerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SpeachtoText" />
+        <activity android:name=".textToSpeech.activities.RecordActivity" />
+        <activity android:name=".MainActivity" /> <!-- Meditation Activities -->
+        <activity android:name=".textToSpeech.MeditationFeature.CATEGORIES.Cate_Nervousness" />
+        <activity android:name=".textToSpeech.MeditationFeature.CATEGORIES.Cate_Five_Minute_Exercises" />
+        <activity android:name=".textToSpeech.MeditationFeature.CATEGORIES.Cate_ten_min_meditation" />
+        <activity android:name=".textToSpeech.MeditationFeature.Player_Anxiety_Release.sub_cat_two_audioplayer" />
+        <activity android:name=".textToSpeech.MeditationFeature.Player_Anxiety_Release.sub_cat__one_audioplayer" />
+        <activity android:name=".textToSpeech.MeditationFeature.CATEGORIES.Cate_Relaxing_Music" />
+        <activity android:name=".textToSpeech.MeditationFeature.CategoryStressed.RelieveStress" />
+        <activity android:name=".textToSpeech.MeditationFeature.CategoryStressed.ReframeStress" />
+        <activity android:name=".textToSpeech.MeditationFeature.GUaudioPlayers.GUTenMinBrAudioPlayer" />
+        <activity android:name=".textToSpeech.MeditationFeature.GUaudioPlayers.GUSixMinBrAudioPlayer" />
+        <activity android:name=".textToSpeech.MeditationFeature.GUaudioPlayers.GUFiveMinBrAudioPlayer" />
+        <activity android:name=".textToSpeech.MeditationFeature.GUaudioPlayers.GUThreeMinBrAudioPlayer" />
+        <activity android:name=".textToSpeech.MeditationFeature.CATEGORIES.Cate_Anxiety_Release" />
+        <activity android:name=".textToSpeech.MeditationFeature.CATEGORIES.Cate_Stressed" />
+        <activity android:name=".textToSpeech.MeditationFeature.CATEGORIES.Cate_GuidedMindfulness" />
+        <activity android:name=".textToSpeech.MeditationFeature.MeditationDashBoardActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

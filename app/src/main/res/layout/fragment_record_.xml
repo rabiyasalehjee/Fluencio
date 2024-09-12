@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".textToSpeech.fragments.Record_Fragment">
+
+    <!--    TIMER   -->
+
+    <RelativeLayout
+        android:id="@+id/rl_timer_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/record_timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ProgressBar
+            android:id="@+id/progressBarCircle"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_countdown_color"
+            android:indeterminate="false"
+            android:max="100"
+            android:padding="5dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/circle_countdown_color"
+            android:rotation="-90" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00:00:00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/record_filename"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:gravity="center_horizontal"
+        android:lineHeight="32dp"
+        android:text="Tap on the mic and start speaking"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/record_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_timer"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <Chronometer
+        android:id="@+id/record_timer"
+        android:layout_width="242dp"
+        android:layout_height="89dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans_light"
+        android:textAlignment="center"
+        android:textColor="#4b77bb"
+        android:textSize="74sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <ImageButton
+        android:id="@+id/record_btn"
+        android:layout_width="111dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/microphone_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_timer" />
+
+    <ImageButton
+        android:id="@+id/record_list_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:src="@drawable/recorder_list_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="330dp"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:id="@+id/prgbar_layout"
+        android:layout_width="422dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/speechtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_btn">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/record_btn"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/speechtext"
+        android:layout_width="256dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:text="We'll tell you how to improve on \n filler words, pitch and more "
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prgbar_layout" />
+
+    <Button
+        android:id="@+id/btn_upload_to_server"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/style"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Generate Results"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speechtext" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".textToSpeech.NavBar.ui.home.HomeFragment">
+
+    <ScrollView android:layout_marginTop="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:text="Welcome!"
+                    android:textStyle="bold"
+                    android:textSize="22dp" />
+
+               <TextView
+                    android:id="@+id/usernameonhome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/welcome"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.04"
+                    android:text=" "
+                    android:textSize="28dp" />
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/presentation"
+                tools:ignore="InvalidId">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:id="@+id/presentation_layout">
+
+                    <TextView
+                        android:id="@+id/presentation_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Presentation Practice"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="20dp"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/freestyle_text2"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="Improve your presentation skills by practicing your speech beforehand."
+                        android:layout_below="@id/presentation_text1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#000"
+                        android:lineHeight="25dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/interviewCard"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:id="@+id/interiewLayout">
+
+                    <TextView
+                        android:id="@+id/interviewText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Interview practice"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="20dp"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="Increase your job chances by giving \neffective interviews"
+                        android:layout_below="@id/interviewText"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#000"
+                        android:lineHeight="25dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/meditateCard"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:id="@+id/meditateLayout">
+
+                    <TextView
+                        android:id="@+id/meditateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meditate"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="20dp"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="Calm yourself by performing relaxing meditation activities"
+                        android:layout_below="@id/meditateText"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#000"
+                        android:lineHeight="25dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- END SCROLL VIEW HERE FOR FIXED NAVIGATION -->
+
+
+
+    <!-- BOTTOM NAVIGATION CODE STARTS HERE -->
+    <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/footer_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/footer_menu_navigation">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <!--
+
+   </RelativeLayout>
+         </LinearLayout>
+         -->
+    <!--    BOTTOM NAVIGATION ENDED HERE -->
+
+
+</RelativeLayout>

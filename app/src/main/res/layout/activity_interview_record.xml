@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".textToSpeech.activities.InterviewRecord">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll_main"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/ll_fragment_view"
+                >
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/interview_nav_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sub_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/inter_back"
+                    android:backgroundTint="#3961ad"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="-30dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Interview Questions"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_instructions"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/book"
+
+
+                         />
+
+
+                    <TextView
+                        android:id="@+id/questionTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="What's your name?"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/backBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="left"
+                            android:text="BACK"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/nxtBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right"
+                            android:text="NEXT"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-20dp"
+                    app:tint="#051F51"
+                    android:src="@drawable/ic_question"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="94dp">
+
+                    <Chronometer
+                        android:id="@+id/record_timer"
+                        android:layout_width="242dp"
+                        android:layout_height="89dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/open_sans_light"
+                        android:textColor="#315aa9"
+                        android:textSize="74sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.739"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.6" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/record_filename"
+                    android:layout_width="347dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="center_horizontal"
+                    android:lineHeight="32dp"
+                    android:text="Tap on the Mic and start speaking"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/record_timer" />
+
+                <ImageButton
+                    android:id="@+id/record_btn"
+                    android:layout_width="111dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/microphone_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/record_timer" />
+
+                <LinearLayout
+                    android:id="@+id/prgbar_layout"
+                    android:layout_width="422dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/speechtext"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/record_btn">
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/record_btn"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="-16dp"
+                        tools:layout_editor_absoluteY="433dp" /></LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_upload_to_server"
+                    android:layout_width="214dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="368dp"
+                    android:background="@drawable/style"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Generate Results"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@null"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.543"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/speechtext" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

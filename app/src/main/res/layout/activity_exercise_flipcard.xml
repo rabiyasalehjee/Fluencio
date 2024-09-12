@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".textToSpeech.improvement_exercise.exercise_flipcard">
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:onClick="goback"
+        android:background="@drawable/ic_back"/>
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Improve your speech by practicing on given topic"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipType="vertical"
+        app:flipFrom="front"
+        app:autoFlipBack="true"
+        android:layout_gravity="center"
+        app:autoFlipBackTime="20000"
+        >
+
+        <!-- Back Layout Goes Here -->
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/flipcard_back"/>
+        <!-- Front Layout Goes Here -->
+        <ImageView
+            android:id="@+id/iv_front"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/flipcard_front"/>
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <Chronometer
+        android:id="@+id/record_timer"
+        android:layout_width="183dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:textColor="#315aa9"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/record_filename"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:gravity="center_horizontal"
+        android:lineHeight="32dp"
+        android:text="Tap on the Mic and start speaking"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_timer" />
+
+    <ImageButton
+        android:id="@+id/record_btn"
+        android:layout_width= "100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/microphone_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_timer"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:id="@+id/prgbar_layout"
+        android:layout_width="422dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/speechtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_btn">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/record_btn"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="433dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_upload_to_server"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/style"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Generate Results"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@+id/speechtext" />
+
+
+</LinearLayout>
+

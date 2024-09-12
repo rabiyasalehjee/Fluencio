@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/meditation_bg_style"
+    tools:context=".textToSpeech.MeditationFeature.CATEGORIES.Cate_GuidedMindfulness">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:paddingLeft="30dp"
+            android:text="Guided\nMindfulness"
+            android:textColor="@color/colorWhite"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_backwhite"
+            android:gravity="end"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reqmaruee"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Choose Wisely Please Use HeadPhone/EarPhone For Better Experience"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+
+        android:visibility="visible"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category1"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cat_1n1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Three Minute\nMindfulness Meditation"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category2"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cat_1n2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Five Minute\nMindfulness Meditation"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category3"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cat_1n3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Six Minute\nMindfulness Meditation"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category4"
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cat_1n4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Ten Minute\nMindfulness Meditation"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

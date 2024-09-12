@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>splash.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+.s5 { color: #808080; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+splash.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">RelativeLayout</span>
+    <span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s3">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+
+    <span class="s1">tools:context</span><span class="s3">=&quot;.textToSpeech.activities.Splash&quot;</span>&gt;
+
+    &lt;<span class="s4">androidx.constraintlayout.widget.ConstraintLayout</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>&gt;
+<span class="s5">&lt;!--</span>
+        <span class="s5">&lt;ImageView 
+            android:id=&quot;@+id/splash&quot; 
+            android:layout_width=&quot;match_parent&quot; 
+            android:layout_height=&quot;match_parent&quot; 
+            android:background=&quot;@drawable/splash_screen&quot; 
+            app:layout_constraintBottom_toBottomOf=&quot;parent&quot; 
+            app:layout_constraintEnd_toEndOf=&quot;parent&quot; 
+            app:layout_constraintStart_toStartOf=&quot;parent&quot; 
+            app:layout_constraintTop_toTopOf=&quot;parent&quot; /&gt; 
+--&gt;</span>
+    &lt;/<span class="s4">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;
+
+    &lt;<span class="s4">com.github.ybq.android.spinkit.SpinKitView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/spin_kit&quot;</span>
+        <span class="s1">style</span><span class="s3">=&quot;@style/SpinKitView.Large.Circle&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_alignParentBottom</span><span class="s3">=&quot;true&quot;</span>
+        <span class="s1">android:layout_centerHorizontal</span><span class="s3">=&quot;true&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;187dp&quot;</span>
+
+        <span class="s1">app:SpinKit_Color</span><span class="s3">=&quot;@color/white&quot; </span>/&gt;
+
+&lt;/<span class="s4">RelativeLayout</span>&gt;</pre>
+</body>
+</html>

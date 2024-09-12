@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meditation_bg_style"
+    android:orientation="vertical"
+    tools:context=".textToSpeech.MeditationFeature.CATEGORIES.Cate_ten_min_meditation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:paddingLeft="30dp"
+            android:text="10-Minute\nMeditation"
+            android:textColor="@color/colorWhite"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/ic_backwhite"
+            android:gravity="end"
+            android:shadowColor="@color/white" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/reqmaruee"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Choose Wisely Please Use HeadPhone/EarPhone For Better Experience"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+
+        android:visibility="visible"/>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cat_5n1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+
+                            android:text="10-Minute Meditation\nFor Beginners"
+                            android:textColor="#FFF"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/bt_play"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_play" />
+
+                        <ImageView
+                            android:id="@+id/bt_pause"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_pause"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cat_5n2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="10-Minute Meditation\nTo Start Your Day"
+                            android:fontFamily="@font/poppins_light"
+                            android:textAlignment="center"
+
+                            android:textColor="#FFF"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/bt_play2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+
+                            android:src="@drawable/ic_play" />
+
+                        <ImageView
+                            android:id="@+id/bt_pause2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_pause"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cat_5n3"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="10-Minute Meditation\nFor Anxiety"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/poppins_light"
+                            android:textColor="#FFF"
+
+                            android:textSize="16sp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/bt_play3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_play" />
+
+                        <ImageView
+                            android:id="@+id/bt_pause3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_pause"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cat_5n4"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="10-Minute Meditation For Stress"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/poppins_light"
+                            android:textColor="#FFF"
+
+                            android:textSize="16sp"/>
+
+                        <ImageView
+                            android:id="@+id/bt_play4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_play" />
+
+                        <ImageView
+                            android:id="@+id/bt_pause4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_pause"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cat_5n5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="10-Minute\nDaily Meditation"
+                            android:textAlignment="center"
+
+                            android:fontFamily="@font/poppins_light"
+                            android:textColor="#FFF"
+                            android:textSize="16sp"/>
+
+                        <ImageView
+                            android:id="@+id/bt_play5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_play" />
+
+                        <ImageView
+                            android:id="@+id/bt_pause5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_pause"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cat_5n6"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="10-Minute\nMeditation For Depression"
+                            android:textAlignment="center"
+
+                            android:fontFamily="@font/poppins_light"
+                            android:textColor="#FFF"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/bt_play6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_play" />
+
+                        <ImageView
+                            android:id="@+id/bt_pause6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_pause"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f7f7f7"
+    android:layout_height="match_parent"
+    tools:context=".textToSpeech.fragments.ProfileFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="351dp"
+        android:layout_height="89dp"
+        android:paddingTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_signup_logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="347dp"
+        android:layout_height="551dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_email_textfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+
+            android:hint="Email">
+
+            <EditText
+                android:id="@+id/profile_email"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:editable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColorHint="#DEE0E9"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_fullname_textfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:hint="Full Name">
+
+            <EditText
+                android:id="@+id/profile_fullname"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#DEE0E9"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_contact_textfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:hint="Contact #">
+
+            <EditText
+                android:id="@+id/profile_contact"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="11"
+                android:textColor="#000000"
+                android:textColorHint="#DEE0E9"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_password_textfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:hint="Password"
+            app:endIconMode="password_toggle">
+
+            <EditText
+                android:id="@+id/profile_password"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#DEE0E9"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_conf_password_textfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:hint="Confirm Password"
+            app:endIconMode="password_toggle">
+
+            <EditText
+                android:id="@+id/profile_conf_password"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#DEE0E9"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/profile_btn"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/style"
+            app:backgroundTint="@null"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registeractivity_profile_btn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:letterSpacing="0.1"
+            android:text="PROFILE"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#315aa9"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

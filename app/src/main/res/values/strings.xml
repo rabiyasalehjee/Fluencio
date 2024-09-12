@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Fluencio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings for On Boarding Screen -->
+
+    <!--Titles-->
+    <string name="first_slide_title">Improve your presentation skill</string>
+    <string name="second_slide_title">Improve your interview skill</string>
+    <string name="third_slide_title">Improve your teaching skill</string>
+    <string name="fourth_slide_title">Get over the fear</string>
+    <!--Descriptions-->
+    <string name="first_slide_desc">Lets master your communication skill by improving speech effectiveness</string>
+    <string name="second_slide_desc">Lets work on speech effectiveness in interviews to leave a positive influence</string>
+    <string name="third_slide_desc">Lets master your speaking skill by removing filler words</string>
+    <string name="fourth_slide_desc">Lets reduce the depression and anxiety and get calm and composed  </string>
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+    <string name="button">Button</string>
+
+
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="no_internet_connection_found">No Internet Connection found</string>
+    <string name="generic_error">Generic error</string>
+    <string name="server_down">Server Down</string>
+    <string name="messages">Message</string>
+    <string name="logout">LOGOUT</string>
+
+    <string name="message_minutes">Please Enter Minutes...</string>
+    <string name="title_activity_interview_category">InterviewCategory</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+</resources>
